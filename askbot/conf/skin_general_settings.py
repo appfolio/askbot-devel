@@ -81,7 +81,7 @@ settings.register(
                         'or uncheck in the case you do not want the logo to '
                         'appear in the default location'
                     ),
-        default = False
+        default = True
     )
 )
 
