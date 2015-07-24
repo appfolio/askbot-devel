@@ -22,8 +22,8 @@ settings.register(
     livesettings.StringValue(
         QA_SITE_SETTINGS,
         'APP_TITLE',
-        default=_('My site'),
-        description=_('Site title for the Q&A forum')
+        default=_('Stackfolio'),
+        description=_('AppFolio Q&A Site')
     )
 )
 
