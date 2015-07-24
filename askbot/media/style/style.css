@@ -339,7 +339,8 @@ body.user-messages {
 }
 #logo img {
   padding: 5px 0px 5px 0px;
-  height: 75px;
+  margin: 13px;
+  height: 43px;
   width: auto;
   float: left;
 }
