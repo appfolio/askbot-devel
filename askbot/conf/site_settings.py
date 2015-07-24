@@ -49,8 +49,7 @@ settings.register(
     livesettings.StringValue(
         QA_SITE_SETTINGS,
         'APP_DESCRIPTION',
-        default='Open source question and answer forum written in ' +\
-                'Python and Django',
+        default='AppFolio Q&A Site',
         description=_('Site description for the search engines')
     )
 )
