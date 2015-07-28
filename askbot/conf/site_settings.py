@@ -31,7 +31,7 @@ settings.register(
     livesettings.StringValue(
         QA_SITE_SETTINGS,
         'APP_KEYWORDS',
-        default=u'Askbot,forum,community',
+        default=u'Stackfolio,forum,community',
         description=_('Comma separated list of Q&A site keywords')
     )
 )
@@ -58,7 +58,7 @@ settings.register(
     livesettings.StringValue(
         QA_SITE_SETTINGS,
         'APP_SHORT_NAME',
-        default='Askbot',
+        default='Stackfolio',
         description=_('Short name for your Q&A forum')
     )
 )
