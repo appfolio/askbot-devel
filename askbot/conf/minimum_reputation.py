@@ -94,7 +94,7 @@ settings.register(
     livesettings.IntegerValue(
         MIN_REP,
         'MIN_REP_TO_DELETE_OTHERS_COMMENTS',
-        default=1,
+        default=100000,
         description=_('Delete comments posted by others')
     )
 )
@@ -103,7 +103,7 @@ settings.register(
     livesettings.IntegerValue(
         MIN_REP,
         'MIN_REP_TO_DELETE_OTHERS_POSTS',
-        default=1,
+        default=100000,
         description=_('Delete questions and answers posted by others')
     )
 )
@@ -188,7 +188,7 @@ settings.register(
     livesettings.IntegerValue(
         MIN_REP,
         'MIN_REP_TO_CLOSE_OTHERS_QUESTIONS',
-        default=1,
+        default=100000,
         description=_('Close and reopen questions')
     )
 )
@@ -230,7 +230,7 @@ settings.register(
     livesettings.IntegerValue(
         MIN_REP,
         'MIN_REP_TO_TWEET_ON_OTHERS_ACCOUNTS',
-        default=1,
+        default=100000,
         description=_('Trigger tweets on others accounts'),
         help_text=_('Reduces spam')
     )
