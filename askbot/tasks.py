@@ -61,7 +61,12 @@ logger = get_task_logger(__name__)
 def slack_new_post_task(post_id, host):
     stackfolio_post = Post.objects.get(id=post_id)
     hyperlink = "http://" + host + reverse('question', args=(post_id,))
-    post_data = json.dumps({"text": "The following question has been posted: <" + hyperlink + "|" + stackfolio_post.thread.title + ">"})
+    post_data = json.dumps({
+        "username":     "stackfolio-question",
+        "icon_emoji":   ":question:",
+        "channel":      "#stackfolio",
+        "text":         "<" + hyperlink + "|" + stackfolio_post.thread.title + ">"
+    })
     result = urllib2.urlopen('https://hooks.slack.com/services/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', post_data)
 
 # TODO: Make exceptions raised inside record_post_update_celery_task() ...
