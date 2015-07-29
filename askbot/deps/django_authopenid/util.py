@@ -543,7 +543,7 @@ def get_enabled_major_login_providers():
                 'resource_endpoint': 'https://www.googleapis.com/plus/v1/people/',
                 'icon_media_path': 'images/jquery-openid/google.gif',
                 'get_user_id_function': get_google_user_id,
-                'extra_auth_params': {'scope': ('profile', 'email', 'openid'), 'openid.realm': askbot_settings.APP_URL, 'hd': 'appfolio.com'}
+                'extra_auth_params': {'scope': ('profile', 'email', 'openid'), 'openid.realm': askbot_settings.APP_URL, 'hd': 'appfolio.com,rentlinx.com,mycase.com'}
             }
     elif google_method == 'openid':
         data['google'] = {
