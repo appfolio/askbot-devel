@@ -62,7 +62,7 @@ settings.register(
     livesettings.BooleanValue(
         FORUM_DATA_RULES,
         'ENABLE_VIDEO_EMBEDDING',
-        default = False,
+        default = True,
         description = _('Enable embedding videos. '),
         help_text = _(
             '<em>Note: please read <a href="%(url)s">read this</a> first.</em>'
@@ -162,7 +162,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MIN_TITLE_LENGTH',
-        default=10,
+        default=5,
         description=_('Minimum length of title (number of characters)')
     )
 )
@@ -171,7 +171,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MIN_QUESTION_BODY_LENGTH',
-        default=10,
+        default=0,
         description=_(
             'Minimum length of question body (number of characters)'
         )
@@ -182,7 +182,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MIN_ANSWER_BODY_LENGTH',
-        default=10,
+        default=0,
         description=_(
             'Minimum length of answer body (number of characters)'
         )
@@ -202,7 +202,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MIN_COMMENT_BODY_LENGTH',
-        default=10,
+        default=0,
         description=_(
             'Minimum length of comment (number of characters)'
         )
@@ -213,7 +213,7 @@ settings.register(
     livesettings.BooleanValue(
         FORUM_DATA_RULES,
         'LIMIT_ONE_ANSWER_PER_USER',
-        default=True,
+        default=False,
         description=_(
             'Limit one answer per question per user'
         )
@@ -262,7 +262,7 @@ settings.register(
         FORUM_DATA_RULES,
         'TAGS_ARE_REQUIRED',
         description = _('Are tags required?'),
-        default = False,
+        default = True,
     )
 )
 
@@ -400,7 +400,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MAX_COMMENTS_TO_SHOW',
-        default=5,
+        default=50,
         description=_(
             'Default max number of comments to display under posts'
         )
@@ -420,7 +420,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MAX_COMMENT_LENGTH',
-        default=300,
+        default=10000,
         description=_(
                 'Maximum comment length, must be &lt; %(max_len)s'
             ) % {'max_len': const.COMMENT_HARD_MAX_LENGTH }
@@ -431,7 +431,7 @@ settings.register(
     livesettings.BooleanValue(
         FORUM_DATA_RULES,
         'USE_TIME_LIMIT_TO_EDIT_COMMENT',
-        default = True,
+        default = False,
         description=_('Limit time to edit comments'),
         help_text=_('If unchecked, there will be no time limit')
     )
@@ -441,7 +441,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MINUTES_TO_EDIT_COMMENT',
-        default=10,
+        default=10000,
         description=_('Minutes allowed to edit a comment'),
         help_text=_('To enable this setting, check the previous one')
     )
@@ -451,7 +451,7 @@ settings.register(
     livesettings.BooleanValue(
         FORUM_DATA_RULES,
         'SAVE_COMMENT_ON_ENTER',
-        default=False,
+        default=True,
         description=_('Save comment by pressing &lt;Enter&gt; key'),
         help_text=_(
             'This may be useful when only one-line comments '
@@ -474,7 +474,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MINUTES_TO_EDIT_ANSWER',
-        default = 300,
+        default = 10000,
         description=_('Minutes allowed to edit answers'),
         help_text=_('To enable this setting, check the previous one')
     )
@@ -504,7 +504,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MIN_SEARCH_WORD_LENGTH',
-        default=4,
+        default=1,
         description=_('Minimum length of search term for Ajax search'),
         help_text=_('Must match the corresponding database backend setting'),
     )
@@ -529,7 +529,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MAX_TAGS_PER_POST',
-        default=5,
+        default=20,
         description=_('Maximum number of tags per question')
     )
 )
