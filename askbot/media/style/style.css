@@ -462,7 +462,7 @@ body.user-messages {
   padding: 0px 0px 0px 35px;
   height: 35px;
   line-height: 25px;
-  margin: 5px 0px 0px 10px;
+  margin: 5px 0px 0px 0px;
   font-size: 16px;
   font-weight: 100;
   text-decoration: none;
@@ -487,13 +487,10 @@ body.user-messages {
   text-decoration: underline;
 }
 #metaNav #navTags {
-  background: 0px -95px url(../images/sprites.png) no-repeat;
 }
 #metaNav #navUsers, #metaNav #navGroups {
-  background: 3px -133px url(../images/sprites.png) no-repeat;
 }
 #metaNav #navBadges {
-  background: 3px -170px url(../images/sprites.png) no-repeat;
 }
 #metaNav a.group-name {
   padding: 0px;
@@ -1364,7 +1361,7 @@ ul#searchTags {
 }
 .short-summary .counts .item-count {
   padding: 0px 5px 0px 5px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "open-sans", sans-serif;
 }
 .short-summary .counts .votes div,
@@ -1372,7 +1369,7 @@ ul#searchTags {
 .short-summary .counts .answers div,
 .short-summary .counts .favorites div {
   margin-top: 3px;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 14px;
   color: #646464;
 }
