@@ -838,39 +838,21 @@ input[type="button"],
 input[type="reset"],
 .button,
 .btn {
-  border: 0 !important;
-  border-top: #eaf2f3 1px solid;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  cursor: pointer;
-  color: #4a757f;
-  font-family: "open-sans", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  height: 27px;
-  margin-right: 10px;
+  background-color: #fa9000;
+  background-image: linear-gradient(to bottom, #ffa000, #f07000 50%);
+  box-shadow: 0;
+  border-color: #cc5f00 #cc5f00 #b45400;
+  border-color: rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
   text-align: center;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #c6d9dd;
-  -moz-text-shadow: 0px 1px 0px #c6d9dd;
-  -webkit-text-shadow: 0px 1px 0px #c6d9dd;
-  background-color: #d1e2e5;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d1e2e5), color-stop(25%, #d1e2e5), to(#a9c2c7));
-  background-image: -webkit-linear-gradient(#d1e2e5, #d1e2e5 25%, #a9c2c7);
-  background-image: -moz-linear-gradient(top, #d1e2e5, #d1e2e5 25%, #a9c2c7);
-  background-image: -ms-linear-gradient(#d1e2e5, #d1e2e5 25%, #a9c2c7);
-  background-image: -o-linear-gradient(#d1e2e5, #d1e2e5 25%, #a9c2c7);
-  background-image: linear-gradient(#d1e2e5, #d1e2e5 25%, #a9c2c7);
+  margin: 10px;
+  border-color: rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
   border-radius: 4px;
   -ms-border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -khtml-border-radius: 4px;
-  -webkit-box-shadow: 1px 1px 2px #636363;
-  -moz-box-shadow: 1px 1px 2px #636363;
-  box-shadow: 1px 1px 2px #636363;
 }
 button:focus,
 input[type="submit"]:focus,
@@ -894,19 +876,22 @@ button:hover,
 input[type="submit"]:hover,
 .button:hover,
 .btn:hover {
-  background-position: 0 0 !important;
-  background-color: #cde5e9;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cde5e9), color-stop(25%, #cde5e9), to(#94b3ba));
-  background-image: -webkit-linear-gradient(#cde5e9, #cde5e9 25%, #94b3ba);
-  background-image: -moz-linear-gradient(top, #cde5e9, #cde5e9 25%, #94b3ba);
-  background-image: -ms-linear-gradient(#cde5e9, #cde5e9 25%, #94b3ba);
-  background-image: -o-linear-gradient(#cde5e9, #cde5e9 25%, #94b3ba);
-  background-image: linear-gradient(#cde5e9, #cde5e9 25%, #94b3ba);
+  background-color: #fa9000;
+  background-image: linear-gradient(to top, #ffa000, #f07000 50%);
+  box-shadow: 0;
+  border-color: #cc5f00 #cc5f00 #b45400;
+  border-color: rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  text-align: center;
+  margin: 10px;
+  border-color: rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
+  border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #c6d9dd;
-  -moz-text-shadow: 0px 1px 0px #c6d9dd;
-  -webkit-text-shadow: 0px 1px 0px #c6d9dd;
 }
 .user-profile-page input[name="send_message"] {
   margin: 10px 0 20px;
