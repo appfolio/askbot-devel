@@ -1683,7 +1683,7 @@ var SimpleEditor = function (attrs) {
     attrs = attrs || {};
     this._rows = attrs.rows || 10;
     this._cols = attrs.cols || 60;
-    this._maxlength = attrs.maxlength || 1000;
+    this._maxlength = attrs.maxlength || 10000;
 };
 inherits(SimpleEditor, WrappedElement);
 
@@ -3778,7 +3778,7 @@ TagEditor.prototype.getAddTagHandler = function () {
             me.setErrorMessage(error);
             setTimeout(function () {
                 me.clearErrorMessage(true);
-            }, 1000);
+            }, 10000);
         }
     };
 };

@@ -1095,9 +1095,9 @@ class Post(models.Model):
         """
         if max_length is None:
             if self.post_type == 'comment':
-                max_words = 150
+                max_words = 10000
             else:
-                max_words = 500
+                max_words = 10000
         else:
             max_words = int(max_length/5)
 
