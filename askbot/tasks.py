@@ -62,20 +62,13 @@ def slack_new_post_task(post_id, host):
     stackfolio_post = Post.objects.get(id=post_id)
     username = stackfolio_post.author.username
     hyperlink = "http://" + host + reverse('question', args=(post_id,))
-
-    base_data = {
+    post_data = json.dumps({
         "username":     "stackfolio-question",
         "icon_emoji":   ":question:",
+        "channel":      "#stackfolio",
         "text":         username + " just asked a question: <" + hyperlink + "|" + stackfolio_post.thread.title + ">"
-    }
-
-    base_data["channel"] = "#stackfolio"
-    post_data_for_stackfolio = json.dumps(base_data)
-    result = urllib2.urlopen('https://hooks.slack.com/services/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', post_data_for_stackfolio)
-
-    base_data["channel"] = "#engineering"
-    post_data_for_engineering = json.dumps(base_data)
-    result = urllib2.urlopen('https://hooks.slack.com/services/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', post_data_for_engineering)
+    })
+    result = urllib2.urlopen('https://hooks.slack.com/services/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', post_data)
 
 # TODO: Make exceptions raised inside record_post_update_celery_task() ...
 #       ... propagate upwards to test runner, if only CELERY_ALWAYS_EAGER = True
